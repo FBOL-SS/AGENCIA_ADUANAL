@@ -1,53 +1,27 @@
-# ALPHA LOGISTICS — Website Next.js
+# ALPHA LOGISTICS — Next.js Website
 
-Sitio web corporativo para agencia de aduanas y logística en El Salvador.
+Sitio corporativo para agencia de aduanas y logística en El Salvador.
 
-## Stack
-
-- Next.js 14
-- React 18
-- Tailwind CSS 3.4
-- Lucide React
-- Listo para Vercel
-
-> Importante: este proyecto usa Tailwind CSS 3.4 para evitar el error de Vercel/Turbopack que ocurre cuando `tailwindcss: latest` instala Tailwind v4 sin el plugin PostCSS correcto.
-
-## Instalación local
+## Correr localmente
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abrir: http://localhost:3000
-
-## Build local
-
-```bash
-npm run build
-```
+Abrir: `http://localhost:3000`
 
 ## Deploy en Vercel
 
-1. Crear un repositorio en GitHub.
-2. Subir todos los archivos del proyecto.
-3. Entrar a Vercel y seleccionar **New Project**.
-4. Importar el repositorio.
-5. Framework: **Next.js**.
-6. Build command: `npm run build`.
-7. Install command: `npm install`.
-8. Output: automático.
-9. Deploy.
+Configuración recomendada:
 
-## Personalización rápida
+- Framework Preset: **Next.js**
+- Build Command: `npm run build`
+- Install Command: `npm install`
+- Output Directory: **dejar vacío**
 
-Editar datos de contacto en `app/page.jsx`:
+Este proyecto incluye `vercel.json` para que Vercel lo detecte como Next.js.
 
-```js
-const contact = {
-  whatsapp: '50370000000',
-  email: 'info@alphalogistics.com.sv'
-}
-```
+## Importante
 
-También puedes modificar tarifas, servicios y puntos operativos en ese mismo archivo.
+No configurar `public` como Output Directory. En Next.js, `public/` es solo carpeta de archivos estáticos, no la salida del build.

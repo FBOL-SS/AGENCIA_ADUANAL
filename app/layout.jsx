@@ -1,15 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export const metadata = {
   title: 'ALPHA LOGISTICS | Agencia de Aduanas y Logística en El Salvador',
-  description: 'Gestión aduanal, DUCA, tránsitos, courier, puerto de Acajutla, aeropuerto SAL y zonas francas en El Salvador.',
-  keywords: ['agencia aduanal El Salvador', 'DUCA', 'tránsitos de carga', 'Puerto de Acajutla', 'Aeropuerto SAL', 'zonas francas El Salvador', 'courier internacional'],
+  description: 'Trámites aduanales DUCA, courier internacional, puerto de Acajutla, aeropuerto SAL, zonas francas y planes corporativos en El Salvador.',
+  keywords: ['agencia de aduanas El Salvador', 'DUCA', 'Puerto de Acajutla', 'Aeropuerto SAL', 'courier El Salvador', 'zonas francas'],
   openGraph: {
-    title: 'ALPHA LOGISTICS | Gestión aduanal rápida y confiable',
-    description: 'Aduanas, logística y comercio internacional para empresas y personas naturales en El Salvador.',
+    title: 'ALPHA LOGISTICS',
+    description: 'Gestión aduanal rápida, seria y accesible en El Salvador.',
     type: 'website',
     locale: 'es_SV'
   }
@@ -18,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
