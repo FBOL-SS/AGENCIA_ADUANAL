@@ -100,7 +100,7 @@ function Header() {
         </nav>
         <a
           href={`https://wa.me/${contact.whatsapp}`}
-          className="hidden rounded-full bg-white px-5 py-3 text-sm font800 font-bold text-navy shadow-lg transition hover:-translate-y-0.5 hover:bg-steel md:inline-flex"
+          className="hidden rounded-full bg-white px-5 py-3 text-sm font-bold text-navy shadow-lg transition hover:-translate-y-0.5 hover:bg-steel md:inline-flex"
         >
           WhatsApp
         </a>
