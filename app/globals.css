@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,5 +8,11 @@ html {
 }
 
 body {
+  background: #ffffff;
+  color: #071B2F;
   font-family: Arial, sans-serif;
+}
+
+.hero-glow {
+  background: radial-gradient(circle at center, rgba(10,132,255,0.18), transparent 70%);
 }
